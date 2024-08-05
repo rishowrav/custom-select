@@ -1,0 +1,134 @@
+.kzui-custom-select {
+  position: relative;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.kzui-custom-select.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.kzui-select-control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: white;
+}
+
+.kzui-select-control input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  font-size: 14px;
+  width: 180px;
+}
+
+.kzui-selected-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.kzui-selected-value {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+}
+
+.kzui-selected-value button {
+  background: none;
+  border: none;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.kzui-select-box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.kzui-placeholder {
+  color: #aaa;
+}
+
+.kzui-options-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.kzui-option-group {
+  padding: 8px;
+}
+
+.kzui-group-label {
+  font-weight: bold;
+  padding: 4px 8px;
+}
+
+.option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.option.selected {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+.option:hover {
+  background-color: #3498db;
+}
+
+.kzui-height {
+  min-height: 40px;
+}
+
+.kzui-flex-item-center {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.kzui-hidden {
+  display: none;
+}
+
+.kzui-text-center {
+  text-align: center;
+  font-size: 3.5em;
+}
+
+@media screen and (max-width: 1080px) {
+  .kzui-select-box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    column-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .kzui-select-box-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+  }
+}
