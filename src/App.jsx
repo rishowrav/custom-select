@@ -44,8 +44,8 @@ function App() {
 
   return (
     <div className="App " style={{ height: "100vh" }}>
-      <h1 className="kzui-text-center">Custom Select</h1>
-      <div className="kzui-select-box-container">
+      <h1 className="kzui-text__center">Custom Select</h1>
+      <div className="kzui-customSelect__container">
         <div>
           {/* single select */}
           <h4>Single Select</h4>
@@ -54,7 +54,7 @@ function App() {
             isSearchable={true}
             isDisabled={false}
             options={options}
-            placeholder="Select Country"
+            placeholder="Search Country"
             isGrouped={false}
             isMulti={false}
             onChangeHandler={handleChange}
@@ -71,7 +71,7 @@ function App() {
             isSearchable={true}
             isDisabled={false}
             options={options}
-            placeholder="Search Multiple Country"
+            placeholder="Search Country"
             isGrouped={false}
             isMulti
             onChangeHandler={handleChange}

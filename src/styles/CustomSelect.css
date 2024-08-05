@@ -1,15 +1,16 @@
-.kzui-custom-select {
+.kzui-customSelect {
   position: relative;
   width: 100%;
   font-family: Arial, sans-serif;
 }
 
-.kzui-custom-select.disabled {
+.kzui-customSelect.disabled {
   pointer-events: none;
   opacity: 0.6;
+  cursor: not-allowed !important;
 }
 
-.kzui-select-control {
+.kzui-customSelect__control {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 8px;
@@ -20,7 +21,7 @@
   background: white;
 }
 
-.kzui-select-control input {
+.kzui-customSelect__control input {
   flex: 1;
   border: none;
   outline: none;
@@ -29,13 +30,13 @@
   width: 180px;
 }
 
-.kzui-selected-values {
+.kzui-customSelect__values {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
 }
 
-.kzui-selected-value {
+.kzui-customSelect__value {
   background-color: #f1f1f1;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -44,24 +45,18 @@
   align-items: center;
 }
 
-.kzui-selected-value button {
+.kzui-customSelect__value button {
   background: none;
   border: none;
   margin-left: 4px;
   cursor: pointer;
 }
 
-.kzui-select-box-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
-}
-
 .kzui-placeholder {
   color: #aaa;
 }
 
-.kzui-options-list {
+.kzui-optionsList {
   position: absolute;
   top: 100%;
   left: 0;
@@ -74,11 +69,11 @@
   overflow-y: auto;
 }
 
-.kzui-option-group {
+.kzui-optionsList__group {
   padding: 8px;
 }
 
-.kzui-group-label {
+.kzui-optionsList__group__label {
   font-weight: bold;
   padding: 4px 8px;
 }
@@ -97,11 +92,17 @@
   background-color: #3498db;
 }
 
-.kzui-height {
+.kzui-customSelect__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.kzui-height_40 {
   min-height: 40px;
 }
 
-.kzui-flex-item-center {
+.kzui-flex__item__center {
   display: flex;
   align-items: center;
   margin-left: 10px;
@@ -111,13 +112,14 @@
   display: none;
 }
 
-.kzui-text-center {
+.kzui-text__center {
   text-align: center;
   font-size: 3.5em;
 }
 
+/* Responsive  */
 @media screen and (max-width: 1080px) {
-  .kzui-select-box-container {
+  .kzui-customSelect__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 50px;
@@ -126,7 +128,7 @@
 }
 
 @media screen and (max-width: 780px) {
-  .kzui-select-box-container {
+  .kzui-customSelect__container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 50px;

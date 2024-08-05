@@ -66,15 +66,15 @@ const CustomSelect = ({
     : options;
 
   return (
-    <div className={`kzui-custom-select ${isDisabled ? "disabled" : ""}`}>
+    <div className={`kzui-customSelect ${isDisabled ? "disabled" : ""}`}>
       <div
         onClick={() => !isDisabled && setMenuOpen(!menuOpen)}
-        className="kzui-select-control"
+        className="kzui-customSelect__control"
       >
-        <div className="kzui-selected-values kzui-height">
+        <div className="kzui-customSelect__values kzui-height_40">
           {isMulti ? (
             selectedValues.map((val, index) => (
-              <span key={index} className="kzui-selected-value">
+              <span key={index} className="kzui-customSelect__value">
                 {val.label}
                 {isClearable && (
                   <button
@@ -92,7 +92,7 @@ const CustomSelect = ({
               </span>
             ))
           ) : selectedValues ? (
-            <span className="kzui-selected-value">
+            <span className="kzui-customSelect__value">
               {selectedValues.label}
               {isClearable && (
                 <button
@@ -114,7 +114,7 @@ const CustomSelect = ({
           )}{" "}
           {/* placeholder text */}
           <div
-            className={`kzui-flex-item-center ${
+            className={`kzui-flex__item__center ${
               selectedValues.length || isSearchable ? "kzui-hidden" : ""
             }`}
           >
@@ -131,16 +131,17 @@ const CustomSelect = ({
             disabled={isDisabled}
           />
         )}
+        <div style={{ fontSize: 20, color: "gray" }}>&#11206;</div>
       </div>
 
       {/* Country List */}
       {menuOpen && (
-        <div className="kzui-options-list">
+        <div className="kzui-optionsList">
           {filteredOptions.length || isGrouped ? (
             isGrouped ? (
               Object.keys(filteredOptions).map((group, index) => (
-                <div key={index} className="kzui-option-group">
-                  <div className="kzui-group-label">{group}</div>
+                <div key={index} className="kzui-optionsList__group">
+                  <div className="kzui-optionsList__group__label">{group}</div>
                   {filteredOptions[group].map((option, index) => (
                     <div
                       key={index}
@@ -176,7 +177,7 @@ const CustomSelect = ({
               ))
             )
           ) : (
-            <div className="kzui-option-group">
+            <div className="kzui-optionsList__group">
               <div className="">Not Found...</div>
             </div>
           )}
