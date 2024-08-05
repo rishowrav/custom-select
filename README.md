@@ -1,8 +1,8 @@
-# React + Vite
+# Custom Select
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Link: https://custom-select1.netlify.app
 
-Currently, two official plugins are available:
+This Custom select component allows you to select values from a list. It has contain:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Single value select option.
+- Multiple value select option.
