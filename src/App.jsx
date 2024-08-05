@@ -34,14 +34,6 @@ function App() {
     console.log("Selected Value:", selectedValue);
   };
 
-  const handleMenuOpen = () => {
-    console.log("Menu opened");
-  };
-
-  const handleSearch = (searchText) => {
-    console.log("Search text:", searchText);
-  };
-
   return (
     <div className="App " style={{ height: "100vh" }}>
       <h1 className="kzui-text__center">Custom Select</h1>
@@ -58,8 +50,6 @@ function App() {
             isGrouped={false}
             isMulti={false}
             onChangeHandler={handleChange}
-            onMenuOpen={handleMenuOpen}
-            onSearchHandler={handleSearch}
           />
         </div>
 
@@ -75,8 +65,6 @@ function App() {
             isGrouped={false}
             isMulti
             onChangeHandler={handleChange}
-            onMenuOpen={handleMenuOpen}
-            onSearchHandler={handleSearch}
           />
         </div>
 
@@ -92,8 +80,6 @@ function App() {
             isGrouped
             isMulti
             onChangeHandler={handleChange}
-            onMenuOpen={handleMenuOpen}
-            onSearchHandler={handleSearch}
           />
         </div>
       </div>
