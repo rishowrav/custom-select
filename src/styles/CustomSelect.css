@@ -117,6 +117,11 @@
   font-size: 3.5em;
 }
 
+.kzui-text--sm {
+  font-size: 0.4em;
+  color: rgba(0, 0, 255, 0.596);
+}
+
 /* Responsive  */
 @media screen and (max-width: 1080px) {
   .kzui-customSelect__container {

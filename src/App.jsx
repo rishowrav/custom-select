@@ -36,7 +36,16 @@ function App() {
 
   return (
     <div className="App " style={{ height: "100vh" }}>
-      <h1 className="kzui-text__center">Custom Select</h1>
+      <h1 className="kzui-text__center">
+        Custom Select <span className="kzui-text--sm">Version 1.0</span> <br />
+        <a
+          className="kzui-text--sm"
+          target="_blank"
+          href="https://custom-select-version-2.netlify.app"
+        >
+          Check out Version 2.0
+        </a>
+      </h1>
       <div className="kzui-customSelect__container">
         <div>
           {/* single select */}
