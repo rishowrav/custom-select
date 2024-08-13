@@ -2,7 +2,7 @@
 
 Live Link: https://custom-select1.netlify.app
 
-## Check Updated Version (Custom Select Component Version 2.0 )
+### Check Updated Version (Custom Select Component Version 2.0 )
 
 Live Link: https://custom-select-version-2.netlify.app
 
